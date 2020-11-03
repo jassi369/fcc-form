@@ -14,8 +14,40 @@
     <!--form starts-->
     <form id="survey-form" action="">
       <!--First name input-->
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" />
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <!--Email input-->
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <!--Age input(number)-->
+      <label id="number-label" for="number">Age(optional)</label>
+      <input type="number" name="age" id="number" min="9" max="90" required />
+      <!--first drop down-->
+      <label for="dropdown"
+        >which option best describes your current role?</label
+      >
+      <select name="dropdown" id="dropdown">
+        <option value="select current role" disabled>
+          Select your current role
+        </option>
+        <option value="student">Student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="Full time learner" Full time learner></option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
     </form>
   </body>
 </html>
